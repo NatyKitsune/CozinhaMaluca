@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Geral : MonoBehaviour
@@ -49,6 +50,11 @@ public class Geral : MonoBehaviour
 
         placarJogadorNum = 0;
         AtualizarTextoPlacar();
+    }
+
+    public void CarregarCena(string nomeDaCena)
+    {
+        SceneManager.LoadScene(nomeDaCena);
     }
 
 }
